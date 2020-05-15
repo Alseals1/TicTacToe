@@ -8,6 +8,7 @@ h1 {
 }
 
 .row>div {
+    font-size: 72px;
     float: left;
     height: 100px;
     width: 100px;
