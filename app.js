@@ -11,6 +11,13 @@ for (i = 0; i < cell.length; i++) {
     cell[i].addEventListener('click', cellClicked)
 }
 
+
+
+
+function startGame() {
+
+}
+
 function cellClicked() {
     if (event.target.innerText === "") {
         if (turn === 1) {
@@ -38,31 +45,42 @@ function winCheck() {
 
 
     if (cell[0].innerText == cell[1].innerText && cell[1].innerText == cell[2].innerText && cell[0].innerText !== "") {
-        console.log(cell[0].innerText, cell[1].innerText);
+        // console.log(cell[0].innerText, cell[1].innerText);
         console.log("Winner!!")
         gameOver = true
+        refreshPage()
 
     } else if (cell[3].innerText == cell[4].innerText && cell[4].innerText == cell[5].innerText && cell[3].innerText !== "") {
         console.log("Winner!!")
         gameOver = true
+        refreshPage()
 
     } else if (cell[6].innerText == cell[7].innerText && cell[7].innerText == cell[8].innerText && cell[6].innerText !== "") {
         console.log("Winner!!")
         gameOver = true
+        refreshPage()
 
     } else if (cell[0].innerText == cell[3].innerText && cell[3].innerText == cell[6].innerText && cell[0].innerText !== "") {
         console.log("Winner!!")
         gameOver = true
+        refreshPage()
 
     } else if (cell[1].innerText == cell[4].innerText && cell[4].innerText == cell[7].innerText && cell[1].innerText !== "") {
         console.log("Winner!!")
         gameOver = true
+        refreshPage()
 
     } else if (cell[2].innerText == cell[5].innerText && cell[5].innerText == cell[8].innerText && cell[2].innerText !== "") {
         console.log("Winner!!")
         gameOver = true
+        refreshPage()
 
+    } else if (cell[2].innerText == cell[4].innerText && cell[4].innerText == cell[6].innerText && cell[2].innerText !== "") {
+        console.log("Winner!!")
+        gameOver = true
+        refreshPage()
     }
+
 
 
 }

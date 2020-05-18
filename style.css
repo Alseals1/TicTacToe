@@ -1,18 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://media.giphy.com/media/iJ2PHrHf16oa7NI7Mh/giphy.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background: rgba(10, 7, 224, 0.384); */
+}
+
 #board {
+    margin: 300px auto;
     padding-top: 3em;
     text-align: center;
 }
 
 h1 {
+    color: #0CE0EC;
     text-align: center;
+    margin-bottom: 5rem;
+    font-family: 'Permanent Marker', cursive;
 }
 
 .row>div {
+    color: #0CE0EC;
     font-size: 72px;
+    font-family: 'Permanent Marker', cursive;
     float: left;
     height: 100px;
     width: 100px;
     cursor: pointer;
+}
+
+.row>div:hover {
+    background-color: grey;
 }
 
 .row {
@@ -22,17 +47,29 @@ h1 {
 }
 
 .top {
-    border-bottom: 1px black solid
+    border-bottom: 7px #0CE0EC solid;
 }
 
 .bottom {
-    border-top: 1px black solid
+    border-top: 7px #0CE0EC solid;
 }
 
 .right {
-    border-left: 1px black solid
+    border-left: 7px #0CE0EC solid;
 }
 
 .left {
-    border-right: 1px black solid
+    border-right: 7px #0CE0EC solid;
+}
+
+button {
+    border: none;
+    padding: 1rem 2rem;
+    margin: 2rem;
+    background-image: url(https://media.giphy.com/media/iJ2PHrHf16oa7NI7Mh/giphy.gif);
+    background-position: center;
+    font-family: 'Permanent Marker', cursive;
+    color: #0CE0EC;
+    font-size: 33px;
+    cursor: pointer;
 }
